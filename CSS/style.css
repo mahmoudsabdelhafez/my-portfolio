@@ -1,0 +1,463 @@
+body {
+    font-family: 'Open Sans', serif;
+    padding-top: 54px;
+    color: #868e96;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Saira Extra Condensed', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #343a40;
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 5.5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+.pipe{
+    color: #bd5d38;
+    font-weight: bold;
+
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+.all {
+    display: grid;
+    grid-template-columns: 26% 74%;
+}
+
+/*--------------------------------------- Nav Bar ------------------------------------------------------------*/
+
+
+.nav-container {
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.nav-bar {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 17rem;
+    height: 100%;
+    background-color: #bd5d38;
+    z-index: 1030;
+    justify-content: start;
+    padding: .5rem 1rem;
+}
+
+.list-container {
+    width: 100%;
+    margin-top: 50%;
+}
+
+/*--------------- Image -------------------*/
+.img {
+    margin-left: 20%;
+}
+
+.my-img {
+    margin-left: 10p;
+    max-width: 10rem;
+    max-height: 10rem;
+    border: .5rem solid rgba(255, 255, 255, .2);
+    border-radius: 50%;
+    height: auto;
+}
+
+/*--------------- Image -------------------*/
+
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-link {
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    background-color: transparent;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #343a40;
+}
+
+.item {
+
+    display: block;
+    box-sizing: border-box;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+    margin: 6px;
+}
+
+/*-------------------------------------------- Pages -------------------------------------------------------*/
+
+.pages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ 
+}
+
+/*-------------------------------------------- Page 1 / About -------------------------------------------------------*/
+
+.page1 {
+    border-bottom: 1px solid #dee2e6;
+    padding-top: 3rem;
+    padding-bottom: 11rem;
+    display: flex;
+    min-height: 60vh;
+}
+
+
+.name {
+    margin-bottom: 0
+}
+.abdelhafez {
+    color: #bd5d38;
+}
+
+
+.info {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Saira Extra Condensed', serif;
+    font-size: 1.35rem;
+}
+
+.email {
+    color: #bd5d38;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: color 0.3s ease;
+}
+
+.email:hover {
+    text-decoration: underline;
+    color: #343a40;
+}
+
+
+
+.icons-list {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0;
+    display: flex;
+}
+
+.logo {
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.icon {
+
+    font-size: 3rem;
+    width: 2em;
+    height: 2em;
+
+    color: #495057;
+    padding: 7px;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #bd5d38;
+}
+
+/*-------------------------------------------- Page 2 / Experience -------------------------------------------------------*/
+
+.page2 {
+    padding-top: 10px;
+    padding-bottom: 3rem;
+    min-height: 100vh;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.exp-head {
+    margin-bottom: 20px;
+    font-size: 3.5rem;
+}
+
+.exp {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.about-exp {
+    margin-right: auto;
+    display: block;
+
+}
+
+
+.exp-subhead {
+    margin-bottom: 0;
+    font-family: 'Saira Extra Condensed', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #343a40;
+    font-size: 1.75rem;
+}
+
+.company {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Saira Extra Condensed', serif;
+    font-size: 1.35rem;
+    margin-top: 0;
+}
+
+.desc {
+    margin-top: 0;
+    margin-bottom: 1px;
+}
+
+.period {
+    text-align: right;
+    margin-top: 80px;
+    margin-right: 40px;
+
+}
+
+
+.date {
+    color: #bd5d38;
+    margin-right: 20px;
+}
+
+
+/*-------------------------------------------- Page 3 / Projects -------------------------------------------------------*/
+
+.page3 {
+    padding-top: 10px;
+    padding-bottom: 3rem;
+    min-height: 200vh;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.projects-cards {
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+.cards {
+    width: 20%;
+}
+
+.card-text {
+    background-color: rgb(184, 183, 183);
+    color: #343a40;
+
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-name {
+    font-size: 24px;
+    text-align: center;
+    transition: color 0.3s ease;
+    touch-action: manipulation;
+    background-color: transparent;
+
+}
+
+.card-name:hover {
+    text-decoration: underline;
+    color: #bd5d38;
+
+}
+
+
+table {
+    border-collapse: collapse;
+    border-radius: 100px;
+    width: 200px;
+    margin: 20px;
+
+}
+
+table tr td {
+    border: 5px solid #bd5d38;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+table img {
+    width: 350px;
+    height: 260px;
+}
+
+
+/*-------------------------------------------- Page 4 / Skills -------------------------------------------------------*/
+
+
+  
+
+
+.page4 {
+    padding-top: 10px;
+    padding-bottom: 3rem;
+    min-height: 90vh;
+    border-bottom: 1px solid #dee2e6;
+}
+
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.my-skills {
+    font-size: 20px;
+}
+
+
+.check-color {
+    color: #bd5d38;
+
+}
+
+.skills-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+/*-------------------------------------------- Page 5 / Education -------------------------------------------------------*/
+
+
+.page5 {
+    padding-top: 10px;
+    padding-bottom: 3rem;
+    min-height: 100vh;
+    border-bottom: 1px solid #dee2e6;
+}
+
+
+
+
+
+
+/* -------------------- RESPONSIVE ------------------------*/
+
+@media(max-width: 600px) {
+
+    .projects-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+
+    .my-img {
+        display: none;
+
+
+    }
+
+
+   
+
+}
+
+
+
+@media (max-width: 840px) {
+
+    .all {
+        display: grid;
+        grid-template-columns: 5% 90%;
+        /* 5% margin on left */
+    }
+
+
+    .pages {
+        width: 100%;
+    }
+
+    .nav-bar {
+        display: flex;
+        width: 100%;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .nav-bar ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: fixed;
+        top: 0;
+        margin-top: 5%;
+        margin-left: 7%;
+        text-align: center;
+
+    }
+
+    .nav-bar ul li {
+        font-size: 18px;
+        margin: 0;
+
+    }
+
+    .my-img {
+        display: none;
+
+
+    }
+
+
+
+
+}
+
+
+@media (min-width: 842px) and (max-width: 1200px) {
+    .pages {
+        margin-left: 15%;
+    }
+  
+   
+}
